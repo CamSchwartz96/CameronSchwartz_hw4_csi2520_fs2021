@@ -7,6 +7,7 @@
         <title>Cameron's Blog Page</title> 
         <a href="/CameronSchwartz_hw4_csi2520_fs2021/" aria-label="Home Page"><i class="fas fa-home"></i></a>
         <link rel="stylesheet" href="style_sheet.css">
+        <script src="comment_box.js"></script>
     </head>
 
     <body>
@@ -35,27 +36,6 @@
                 <button type="button" name="button" id="delete">Delete</button>
             </div>
             </div>
-
-            <script type="text/javascript">
-            $(document).ready(function(){
-
-                $('#comment').click(function(){
-                    var input = $('#input').val();
-                    $('.box').append(input + '<br>');
-                    $('#input').val('');
-                    $('.box-container').slideDown();
-                });
-
-                $('#cancel').click(function(){
-                    $('input').val('');
-                });
-
-                $('#delete').click(function(){
-                    $('.box').text('');
-                    $('.box-container').slideUp();
-                });
-            });
-            </script>
     </body>
 
     <footer>
